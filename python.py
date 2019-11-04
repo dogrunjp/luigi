@@ -1,9 +1,10 @@
 import numpy as np
 from numpy.linalg import norm
 import csv
+import sys
 
-default_file_name = '/Users/oec/Documents/Jupyter/aoe/T-TPM.txt'
-output_file_name = 'data/result_final.txt'
+default_file_name = sys.argv[1]
+output_file_name = sys.argv[2]
 
 
 def get_index():

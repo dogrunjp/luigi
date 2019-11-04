@@ -37,7 +37,7 @@ proc absolute(ab1,ab2:seq[float]):float=
 ##cos類似度計算関数
 proc git_col_len():seq[string]=
 
-    let dfRawText = DF.fromFile("/Users/ishikawakaito/luigi/T-TPM100.csv")
+    let dfRawText = DF.fromFile("inputのPATH")
 
     const schema = [
     strCol("id"),
@@ -66,13 +66,7 @@ proc git_col_len():seq[string]=
             var abso:float = 0
             var cosluigi:float = 0
             cosluigi = inner_vec(naiseki)/absolute(vv,ww)
-            var result: seq[string] = @[$vname[0],$wname[0],$cosluigi]
+            var res: seq[string] = @[$vname[0],$wname[0],$cosluigi]
+            echo res
                 
 echo git_col_len()
-
-
-
-
-
-
-
